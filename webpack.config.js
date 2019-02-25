@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
 
 module.exports = {
-	entry: ['whatwg-fetch', 'babel-polyfill', './src/index.js'],
+	entry: ['./src/index.js'],
 	output: {
 		// Webpack prefers an absolute path:
 		path: path.resolve(__dirname, './build'),
@@ -46,4 +46,4 @@ module.exports = {
 		compress: true,
 		publicPath: '/'
 	}
-}	
+}
